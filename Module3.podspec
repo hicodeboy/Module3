@@ -32,6 +32,16 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'Module3/Classes/**/*'
   
+  s.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/*.{h,m,swift}'
+    # test_spec.requires_app_host = true
+    test_spec.dependency 'Kiwi'
+    test_spec.dependency 'Quick'
+    test_spec.dependency 'OCMock'
+    test_spec.dependency 'Nimble'
+
+  end
+  
   # s.resource_bundles = {
   #   'Module3' => ['Module3/Assets/*.png']
   # }
